@@ -2,10 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /* Timezone */
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set(getenv('TIMEZONE'));
 
 /* Base Site URL */
-$config['base_url'] = '';
+$config['base_url'] = getenv('BASE_URL');
 
 /* Index File */
 $config['index_page'] = '';
